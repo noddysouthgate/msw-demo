@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+      <div className="Container">
+        <h1 data-testid="title" className="Title">
+          Mock Service Worker
+        </h1>
+        <p data-testid="quote" className="Quote">
+          Mock by intercepting requests on the network level. Seamlessly reuse
+          the same mock definition for testing, development, and debugging.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
